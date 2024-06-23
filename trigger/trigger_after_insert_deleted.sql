@@ -1,4 +1,4 @@
-use practiceStore;
+git branch -M mainuse practiceStore;
 select * from student;
 spStudentID		;
 sp_hepltext spStudentID;
