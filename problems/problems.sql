@@ -20,6 +20,6 @@ select * from tbl_employees;
 --Q.2 Find the number of employees in each department--
 select department, COUNT(*) as num_employees
 from tbl_employees
-group by department
+group by department;
 
 
