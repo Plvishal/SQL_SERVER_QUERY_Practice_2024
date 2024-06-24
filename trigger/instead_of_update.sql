@@ -12,15 +12,11 @@ insert into instead_trigger_info values
 ('Abhikesh Mishra','Chennai','9528964285'),
 ('Parul Saxena','Lucknow','9568964215')
 select * from instead_trigger_info;
-
-create trigger tr_instead_info
+create trigger tr_instead_update
 on instead_trigger_info
-instead of insert
+instead of update
 as
 begin
-	print 'you are not allow to insert data in the table';
+	print 'you are not allow to update data in the table';
 end;
-
---try ti insert data in the table--
-insert into instead_trigger_info values
-('Pankaj Pal','Noida','9568964666');
+update instead_trigger_info set name='Risabh Sahu' where id=6;

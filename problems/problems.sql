@@ -22,4 +22,6 @@ select department, COUNT(*) as num_employees
 from tbl_employees
 group by department;
 
-
+-- Find the employees in the IT department earning more than 500000--
+select * from tbl_employees
+where department='IT' and emp_salary>50000;
