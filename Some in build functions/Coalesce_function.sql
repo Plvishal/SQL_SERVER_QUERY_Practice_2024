@@ -17,3 +17,11 @@ insert into fullname_tbl values
 
 select * from fullname_tbl;
 select id,coalesce(firstname,middle_name,last_name) from fullname_tbl;
+
+
+--ISNULL--
+select firstname,last_name from fullname_tbl;
+--isnull take only  two argument
+select ISNULL(firstname, last_name) from fullname_tbl;
+--coalesce take list of argumnet
+select coalesce(firstname,middle_name,last_name) from fullname_tbl;
